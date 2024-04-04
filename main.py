@@ -23,9 +23,9 @@ import re
 import os
 
 bot = Client("bot",
-             bot_token= "6529951387:AAHplnSk8yO0mSeS36q9Lsn5MUA7ZIFN55k",
-             api_id= 22263567,
-             api_hash= "258fb6f6cdfa8220b74a4a6753b2ece6")
+             bot_token= "7164381935:AAFLJQcZR6blolTwQkoQirLWtIltMTUDGnE",
+             api_id= 22253680,
+             api_hash= "4fc4c646519fe43891bebd1449744b7e")
 
 
 @bot.on_message(filters.command(["start"]) & filters.user(ADMINS))
@@ -39,7 +39,7 @@ async def restart_handler(_, m):
     os.execl(sys.executable, sys.executable, *sys.argv)
 
 
-@bot.on_message(filters.command(["Invix"]) & filters.user(ADMINS))
+@bot.on_message(filters.command(["Archana"]) & filters.user(ADMINS))
 async def account_login(bot: Client, m: Message):
     editable = await m.reply_text(f"**Hey [{m.from_user.first_name}](tg://user?id={m.from_user.id})\nSend txt file**")
     input: Message = await bot.listen(editable.chat.id)
@@ -197,8 +197,8 @@ async def account_login(bot: Client, m: Message):
                         time.sleep(e.x)
                         continue
                 else:
-                    prog = await m.reply_text(f"**Downloading:-**\n\n** Video Name :-** `{name}\nQuality - {raw_text2}`\n**link:**`{url}`\n\n **𝙱𝚘𝚝 𝚖𝚊𝚍𝚎 𝚋𝚢 𝐒тυввσяη❤️**")
-                    res_file = await helper.download_video(url, cmd, name)
+                    prog = await m.reply_text(f"**Downloading:-**\n\n** Video Name :-** `{name}\nQuality - {raw_text2}`\n**link:**`{url}`\n\n **𝙱𝚘𝚝 𝚖𝚊𝚍𝚎 𝚋𝚢 Mr Aman Pathak ❤️**")
+                    res_file = await helper.download, cmd, name)
                     filename = res_file
                     await prog.delete(True)
                     await helper.send_vid(bot, m, cc, filename, thumb, name)
