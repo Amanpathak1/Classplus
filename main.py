@@ -23,9 +23,9 @@ import re
 import os
 
 bot = Client("bot",
-             bot_token= "7164381935:AAFLJQcZR6blolTwQkoQirLWtIltMTUDGnE",
-             api_id= 22253680,
-             api_hash= "4fc4c646519fe43891bebd1449744b7e")
+             bot_token= "7111400415:AAGPEM099MBl1_fyXEaex82bHCC7ilyYtYE",
+             api_id= 21063898,
+             api_hash= "7f8faf197d0459c45c07e8f5b00faeb3")
 
 
 @bot.on_message(filters.command(["start"]) & filters.user(ADMINS))
@@ -169,8 +169,8 @@ async def account_login(bot: Client, m: Message):
                 cmd = f'yt-dlp -f "{ytf}" "{url}" -o "{name}.mp4"'
 
             try:                               
-                cc = f'** {str(count).zfill(3)}.** {name1} ({res}) 𝚂𝚝𝚞𝚋𝚋𝚘𝚛𝚗.mkv\n**Batch Name :** {b_name}\n\n**Downloaded by : {CR}**'
-                cc1 = f'** {str(count).zfill(3)}.** {name1} 𝚂𝚝𝚞𝚋𝚋𝚘𝚛𝚗.pdf \n**Batch Name :**{b_name}\n\n**Downloaded by : {CR}**'
+                cc = f'** {str(count).zfill(3)}.** {name1} ({res}) Aman pathak.mkv\n**Batch Name :** {b_name}\n\n**Downloaded by : {CR}**'
+                cc1 = f'** {str(count).zfill(3)}.** {name1} Aman pathak.pdf \n**Batch Name :**{b_name}\n\n**Downloaded by : {CR}**'
                 if "drive" in url:
                     try:
                         ka = await helper.download(url, name)
